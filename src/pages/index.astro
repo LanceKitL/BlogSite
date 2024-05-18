@@ -1,14 +1,23 @@
+---
+import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
+const pageTitle = "Home Page";
+---
+
 <html>
 	<head>
 		<meta />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
-	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
 
-		<h1>Lance</h1>
+	<body>
+		<Navigation />
+
+		<h1>{pageTitle}</h1>
+
+		<Footer />
 	</body>
 </html>
